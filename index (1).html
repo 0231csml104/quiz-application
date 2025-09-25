@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Application</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="quiz-container">
+    <h1>Online Quiz Application</h1>
+
+    <!-- Start Screen -->
+    <div id="start-screen">
+      <label for="category">Choose Category:</label>
+      <select id="category">
+        <option value="9">General Knowledge</option>
+        <option value="17">Science & Nature</option>
+        <option value="19">Mathematics</option>
+        <option value="21">Sports</option>
+        <option value="22">Geography</option>
+        <option value="23">History</option>
+        <option value="24">Politics</option>
+        <option value="27">Animals</option>
+        <option value="20">Mythology</option>
+      </select>
+
+      <label for="difficulty">Choose Difficulty:</label>
+      <select id="difficulty">
+        <option value="easy">Easy</option>
+        <option value="medium">Medium</option>
+        <option value="hard">Hard</option>
+      </select>
+
+      <label for="question-count">Number of Questions:</label>
+      <select id="question-count">
+        <option value="5">5</option>
+        <option value="10">10</option>
+        <option value="15">15</option>
+        <option value="20">20</option>
+      </select>
+
+      <button id="start-btn">Start Quiz</button>
+    </div>
+
+    <!-- Quiz Screen -->
+    <div id="quiz-screen" class="hidden">
+      <div id="progress"></div>
+      <div id="timer">Time Left: 30s</div>
+      <div id="question"></div>
+      <div id="options"></div>
+      <button id="next-btn" class="hidden">Next</button>
+    </div>
+
+    <!-- Result Screen -->
+    <div id="result-screen" class="hidden">
+      <h2>Your Score: <span id="score"></span></h2>
+      <button id="restart-btn">Restart Quiz</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
